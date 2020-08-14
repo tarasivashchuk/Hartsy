@@ -1,0 +1,1966 @@
+<!--
+blanco v2 by majinbabe
+jubileethemes.tumblr.com
+-->
+<head>
+    <meta name="color:Gradient Top" content="#ffffff"/>
+    <meta name="color:Gradient Bottom" content=""/>
+    <meta name="color:Background" content="#fff"/>
+    <meta name="color:Text" content="#000"/>
+    <meta name="color:Links" content="#000"/>
+    <meta name="color:border" content=""/>
+
+    <meta name="if:Gradient Background" content="0"/>
+    <meta name="if:Show Nav Buttons" content="0"/>
+    <meta name="if:Show Blog Title" content="1"/>
+    <meta name="if:Show Sidebar Image" content="0"/>
+    <meta name="if:Fade Image" content="0"/>
+    <meta name="if:Grayscale Images" content="0"/>
+    <meta name="if:Single Column" content="1"/>
+    <meta name="if:Two Columns" content="0"/>
+    <meta name="if:Post Border" content="0"/>
+    <meta name="if:400px" content="0">
+    <meta name="if:250px" content="1">
+    <meta name="if:200px" content=""/>
+    <meta name="if:light post shadow" content="0"/>
+    <meta name="if:post shadow" content="0"/>
+    <meta name="if:reverse shadow on hover" content="0"/>
+
+    <meta name="font:Body" content="Arial"/>
+
+    <meta name="image:Background" content=""/>
+    <meta name="image:Sidebar" content=""/>
+    <meta name="image:floaties1" content=""/>
+    <meta name="image:floaties2" content=""/>
+    <meta name="image:floaties3" content=""/>
+    <meta name="image:floaties4" content=""/>
+    <meta name="image:floaties5" content=""/>
+    <meta name="image:Misc Image" content=""/>
+
+    <meta name="text:Post Gaps" content="5"/>
+    <meta name="text:Body font size" content="11"/>
+    <meta name="text:Sidebar Vertical" content="150"/>
+    <meta name="text:misc image vertical" content="120"/>
+    <meta name="text:misc image horizontal" content="120"/>
+    <meta name="text:link 1 title" content=""/>
+    <meta name="text:link 2 title" content=""/>
+    <meta name="text:link 3 title" content=""/>
+    <meta name="text:link 4 title" content=""/>
+    <meta name="text:link 5 title" content=""/>
+    <meta name="text:link 6 title" content=""/>
+    <meta name="text:link 1 url" content=""/>
+    <meta name="text:link 2 url" content=""/>
+    <meta name="text:link 3 url" content=""/>
+    <meta name="text:link 4 url" content=""/>
+    <meta name="text:link 5 url" content=""/>
+    <meta name="text:link 6 url" content=""/>
+
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <link rel="shortcut icon" href="{Favicon}">
+    <title>Untitled Document</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+    {block:Description}
+    <meta name="description" content="{MetaDescription}"/>
+    {/block:Description}
+
+    <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://static.tumblr.com/j1tjexd/A33m6pdi7/like_script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"
+            type="text/javascript"><!--mce:0--></script>
+    <script src="toggle.js" type="text/javascript"><!--mce:1--></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".description").hide();
+            $(".about").click(function () {
+                $('.description').slideToggle("fast");
+                return true;
+            });
+        });
+    </script>
+    <style type="text/css">
+        {
+            block: IfGrayscaleImages
+        }
+        img {
+            -webkit-transition: opacity 0.8s linear;
+            opacity: 0.60;
+            -webkit-filter: grayscale(100%);
+        }
+
+        img:hover {
+            -webkit-transition: opacity 0.8s linear;
+            opacity: 1;
+            -webkit-filter: none;
+        }
+
+        {
+        /
+        block
+        :
+        IfGrayscaleImages
+        }
+        {
+            block: IfFadeImage
+        }
+        img {
+            -webkit-transition: opacity 0.8s linear;
+            opacity: 0.60;
+        }
+
+        img:hover {
+            -webkit-transition: opacity 0.8s linear;
+            opacity: 1;
+        }
+
+        {
+        /
+        block
+        :
+        IfFadeImage
+        }
+        #tumblr_controls {
+            top: 1px !important;
+            margin: 0 0 0 0;
+            right: 0px !important;
+            position: fixed !important;
+        }
+
+        {
+            block: IfFadeImage
+        }
+        iframe#tumblr_controls {
+            right: 0px !important;
+            position: fixed !important;
+            -webkit-transition: opacity 0.5s linear;
+            opacity: 0.6;
+            -webkit-transition: all 0.8s ease-out;
+            -moz-transition: all 0.8s ease-out;
+            transition: all 0.8s ease-out;
+        }
+
+        iframe#tumblr_controls:hover {
+            -webkit-transition: opacity 0.7s linear;
+            opacity: 1;
+            -webkit-transition: all 0.4s ease-out;
+            -moz-transition: all 0.4s ease-out;
+            transition: all 0.4s ease-out;
+        }
+
+        {
+        /
+        block
+        :
+        IfFadeImage
+        }
+
+        {
+            block: IfNotGradientBackground
+        }
+        body {
+
+        color: {
+            color: Text
+        }
+
+        ;
+        background-color: {
+            color: Background
+        }
+
+        ;
+        background-image:
+
+        url
+        (
+        {image:Background}
+        )
+        ;
+        background-attachment: fixed
+
+        ;
+        background-size: cover
+
+        ;
+        font-size: {
+            text: Body font size
+        }
+
+        px
+
+        ;
+        text-align:center
+
+        ;
+        font-family: {
+            font: Body
+        }
+
+        ;
+        line-height:
+
+        15
+        px
+
+        ;
+        }
+        {
+            block: IfNotGradientBackground
+        }
+        {
+            block: IfGradientBackground
+        }
+        body {
+            background: fixed;
+
+        background-image:
+
+        -o-linear-gradient
+        (
+        bottom, {
+            color: Gradient Bottom
+        }
+
+        ,
+        {
+            color: Gradient Top
+        }
+        )
+        ;
+        background-image:
+
+        -moz-linear-gradient
+        (
+        bottom, {
+            color: Gradient Bottom
+        }
+
+        ,
+        {
+            color: Gradient Top
+        }
+        )
+        ;
+        background-image:
+
+        -webkit-linear-gradient
+        (
+        bottom, {
+            color: Gradient Bottom
+        }
+
+        ,
+        {
+            color: Gradient Top
+        }
+        )
+        ;
+        background-image:
+
+        -ms-linear-gradient
+        (
+        bottom, {
+            color: Gradient Bottom
+        }
+
+        ,
+        {
+            color: Gradient Top
+        }
+        )
+        ;
+        background-image:
+
+        linear-gradient
+        (
+        bottom, {
+            color: Gradient Bottom
+        }
+
+        ,
+        {
+            color: Gradient Top
+        }
+        )
+        ;
+        margin:
+
+        0
+        ;
+        padding:
+
+        0
+        ;
+        font-size: {
+            text: Body font size
+        }
+
+        px
+
+        ;
+        text-align:center
+
+        ;
+        font-family: {
+            font: Body
+        }
+
+        ;
+        line-height:
+
+        15
+        px
+
+        ;
+        color: {
+            color: Text
+        }
+
+        ;
+        }
+        {
+        /
+        block
+        :
+        IfGradientBackground
+        }
+        .wrapper {
+            margin: 1px auto;
+            margin-left: auto;
+        }
+
+        .header {
+            float: left;
+            width: 100%;
+        }
+
+        .left {
+            float: left;
+            margin-right: 20px;
+            width: 802px;
+
+        color: {
+            color: Text
+        }
+
+        ;
+        }
+
+        p {
+            margin: 0px;
+            margin-top: 0px;
+        }
+
+        a:link, a:active, a:visited {
+
+        color: {
+            color: Links
+        }
+
+        ;
+        text-decoration: none
+
+        ;
+        -o-transition-duration:
+
+        3
+        s
+
+        ;
+        -webkit-transition-duration:
+
+        3
+        s
+
+        ;
+        -moz-transition-duration:
+
+        3
+        s
+
+        ;
+        }
+
+        a:hover {
+
+        color: {
+            color: Hover
+        }
+
+        ;
+        -webkit-transition-duration:
+
+        0.5
+        s
+
+        ;
+        -moz-transition-duration:
+
+        0.5
+        s
+
+        ;
+        -o-transition-duration:
+
+        0.5
+        s
+
+        ;
+        -ms-transition-duration:
+
+        0.5
+        s
+
+        ;
+        text-transform:uppercase
+
+        ;
+        }
+
+        #info {
+            padding: 0px;
+            width: 200px;
+
+        font-family: {
+            font: body
+        }
+
+        ;
+        font-size:
+
+        12
+        px
+
+        ;
+        color: {
+            color: Text
+        }
+
+        ;
+        text-align: center
+
+        ;
+        line-height:
+
+        15
+        px
+
+        ;
+        margin-bottom:
+
+        3
+        px
+
+        ;
+        overflow: auto
+
+        ;
+        }
+
+        #navi {
+            width: 190px;
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        #navi a {
+            height: 11px;
+            padding: 2px;
+            margin-bottom: 3px;
+            margin: 0px;
+
+        font-family: {
+            font: Body
+        }
+
+        ;
+        font-size:
+
+        9
+        px
+
+        ;
+        color: {
+            color: Links
+        }
+
+        ;
+        text-transform: none
+
+        ;
+        letter-spacing:
+
+        1
+        px
+
+        ;
+        text-align: center
+
+        ;
+        line-height:
+
+        11
+        px
+
+        ;
+        text-decoration: none
+
+        ;
+        }
+
+        #navi a:hover {
+
+        color: {
+            color: Hover
+        }
+
+        ;
+        text-decoration: underline
+
+        ;
+        }
+
+        #posts {
+
+        {
+            block: IfSingleColumn
+        }
+        {
+            block: If400px
+        }
+        width:
+
+        740
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        If400px
+        }
+        {
+            block: If250px
+        }
+        width:
+
+        425
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        If250px
+        }
+        {
+            block: if200px
+        }
+        width:
+
+        330
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        if200px
+        }
+        margin:
+
+        50
+        px
+
+        500
+        px
+
+        ;
+        {
+            block: IfSingleColumn
+        }
+        {
+            block: IfTwoColumns
+        }
+        {
+            block: If400px
+        }
+        width:
+
+        940
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        If400px
+        }
+        {
+            block: If250px
+        }
+        width:
+
+        625
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        If250px
+        }
+        {
+            block: if200px
+        }
+        width:
+
+        530
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        if200px
+        }
+        margin:
+
+        50
+        px
+
+        300
+        px
+
+        ;
+        {
+            block: IfTwoColumns
+        }
+        color: {
+            color: Text
+        }
+
+        ;
+
+        {
+            block: PermalinkPage
+        }
+        margin-left:
+
+        300
+        px
+
+        ;
+        width:
+
+        400
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        PermalinkPage
+        }
+        }
+
+        .entry {
+
+        {
+            block: IfPostBorder
+        }
+        border:
+
+        1
+        px solid {
+            color: border
+        }
+
+        ;
+        {
+        /
+        block
+        :
+        IfPostBorder
+        }
+        margin:
+
+        10
+        px
+
+        ;
+        padding:
+
+        2
+        px
+
+        ;
+        float:left
+
+        ;
+        margin-right:
+
+        0
+        px
+
+        ;
+        margin-bottom: {
+            text: Post Gaps
+        }
+
+        px
+
+        ;
+        line-height:
+
+        15
+        px
+
+        ;
+        color: {
+            color: Text
+        }
+
+        ;
+        {
+            block: If400px
+        }
+        width:
+
+        410
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        If400px
+        }
+        {
+            block: If250px
+        }
+        width:
+
+        255
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        If250px
+        }
+        {
+            block: if200px
+        }
+        width:
+
+        205
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        if200px
+        }
+        opacity:
+
+        1
+        ;
+        {
+            block: Ifpostshadow
+        }
+        {
+            block: IfLightpostShadow
+        }
+        box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        255
+        ,
+        255
+        ,
+        255
+        ,
+        1
+        )
+        ;
+        -webkit-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        255
+        ,
+        255
+        ,
+        255
+        ,
+        1
+        )
+        ;
+        -moz-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        255
+        ,
+        255
+        ,
+        255
+        ,
+        1
+        )
+        ;
+        {
+        /
+        block
+        :
+        IfLightpostShadow
+        }
+
+
+        {
+            block: IfnotlightpostShadow
+        }
+        box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        0
+        ,
+        0
+        ,
+        0
+        ,
+        1
+        )
+        ;
+        -webkit-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        0
+        ,
+        0
+        ,
+        0
+        ,
+        1
+        )
+        ;
+        -moz-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        0
+        ,
+        0
+        ,
+        0
+        ,
+        1
+        )
+        ;
+        {
+        /
+        block
+        :
+        IfnotlightpostShadow
+        }
+        {
+        /
+        block
+        :
+        Ifpostshadow
+        }
+        {
+            block: PermalinkPage
+        }
+        width:
+
+        500
+        px
+
+        ;
+        height: auto
+
+        ;
+        opacity:
+
+        1
+        ;
+        {
+        /
+        block
+        :
+        PermalinkPage
+        }
+        }
+        {
+            block: ifreverseshadowonhover
+        }
+        .entry:hover {
+
+        {
+            block: IfnotLightpostShadow
+        }
+        box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        255
+        ,
+        255
+        ,
+        255
+        ,
+        1
+        )
+        ;
+        -webkit-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        255
+        ,
+        255
+        ,
+        255
+        ,
+        1
+        )
+        ;
+        -moz-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        255
+        ,
+        255
+        ,
+        255
+        ,
+        1
+        )
+        ;
+        {
+        /
+        block
+        :
+        IfnotLightpostShadow
+        }
+        {
+            block: IflightpostShadow
+        }
+        box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        0
+        ,
+        0
+        ,
+        0
+        ,
+        1
+        )
+        ;
+        -webkit-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        0
+        ,
+        0
+        ,
+        0
+        ,
+        1
+        )
+        ;
+        -moz-box-shadow:
+
+        0
+        0
+        12
+        px
+
+        rgba
+        (
+        0
+        ,
+        0
+        ,
+        0
+        ,
+        1
+        )
+        ;
+        {
+        /
+        block
+        :
+        IflightpostShadow
+        }
+        }
+        {
+        /
+        block
+        :
+        ifreverseshadowonhover
+        }
+
+        .title {
+            font-family: courier new;
+            font-weight: none;
+            text-align: center;
+            padding: 2px;
+            text-transform: lowercase;
+            margin-top: 8px;
+            line-height: 20px;
+            margin-bottom: 3px;
+            font-size: 22px;
+
+        color: {
+            color: Links
+        }
+
+        ;
+        '
+        }
+
+        .post_title {
+            font-family: courier new;
+
+        color: {
+            color: Text
+        }
+
+        ;
+        display:block
+
+        ;
+        font-size:
+
+        12
+        px
+
+        ;
+        line-height:
+
+        20
+        px
+
+        ;
+        text-transform:none
+
+        ;
+        }
+
+        .link_title {
+
+        color: {
+            color: Text
+        }
+
+        ;
+        font-size:
+
+        12
+        px
+
+        ;
+        line-height:
+
+        20
+        px
+
+        ;
+        text-transform:none
+
+        ;
+        font-family:courier new
+
+        ;
+        margin-bottom:
+
+        5
+        px
+
+        ;
+        }
+
+        .nav {
+            position: fixed !important;
+            width: 200px;
+            height: 100%;
+
+        margin-top: {
+            text: Sidebar Vertical
+        }
+
+        px
+
+        ;
+        margin-left:
+
+        50
+        px
+
+        ;
+        padding-left:
+
+        0
+        px
+
+        ;
+        padding:
+
+        0
+        px
+
+        ;
+        line-height:
+
+        11
+        px
+
+        ;
+        letter-spacing:
+
+        0
+        px
+
+        ;
+        }
+
+
+        .photopermaholder {
+            position: absolute;
+            height: 14px;
+            bottom: 22px;
+            right: 3px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -moz-transition: all 0.5;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5;
+        }
+
+        .photoperma {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 4px;
+            height: 14px;
+        }
+
+        .photoperma a {
+            color: #000;
+        }
+
+        .entry:hover .photopermaholder {
+            opacity: 1.9;
+            filter: alpha(opacity=70);
+            -moz-transition: all 0.5;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5;
+        }
+
+        .permalink {
+            text-transform: none;
+            text-align: right;
+            font-family: calibri;
+
+        color: {
+            color: Links
+        }
+
+        ;
+        isplay:inline-block
+
+        ;
+        margin-right:
+
+        5
+        px
+
+        ;
+        padding:
+
+        0
+        px
+
+        ;
+        height:
+
+        6
+        px
+
+        ;
+        opacity:
+
+        0
+        ;
+        filter:
+
+        alpha
+        (
+        opacity
+
+        =
+        0
+        )
+        ;
+        -moz-transition: all
+
+        0.4
+        s
+
+        ;
+        -webkit-transition: all
+
+        0.4
+        s
+
+        ;
+        -o-transition: all
+
+        0.4
+        s
+
+        ;
+        transition: all
+
+        0.4
+        ;
+        }
+
+        div#entry:hover .permalink {
+            opacity: 0.7;
+            filter: alpha(opacity=100);
+            -moz-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4;
+        }
+
+        .quote {
+
+        font-size: {
+            text: Body font size
+        }
+
+        px
+
+        ;
+        {
+            block: IfCalibriFont
+        }
+        font-family:calibri, helvetica
+
+        ;
+        {
+        /
+        block
+        :
+        IfCalibriFont
+        }
+        line-height:
+
+        14
+        px
+
+        ;
+        text-transform:none
+
+        ;
+        margin-bottom:
+
+        -
+        2
+        px
+
+        ;
+        color: {
+            color: Text
+        }
+
+        ;
+        {
+            block: IfnotCalibriFont
+        }
+        font-family: {
+            font: Body
+        }
+
+        ;
+        {
+        /
+        block
+        :
+        IfnotCalibriFont
+        }
+        }
+
+        .audio {
+            width: 100%;
+            margin-bottom: 4px;
+        }
+
+        .audiocap, .videocap {
+
+        background-color: {
+            color: Audio
+        }
+
+        ;
+        display:block
+
+        ;
+        padding:
+
+        10
+        px
+
+        ;
+        }
+
+        .albumart, .albumart img {
+
+        {
+            block: IndexPage
+        }
+        width:
+
+        100
+        %
+        ;
+        {
+        /
+        block
+        :
+        IndexPage
+        }
+        {
+            block: PermalinkPage
+        }
+        width:
+
+        500
+        px
+
+        ;
+        {
+        /
+        block
+        :
+        PermalinkPage
+        }
+        }
+
+        div.video embed,
+        div.post div.video object {
+
+        {
+            block: IndexPage
+        }
+        width:
+
+        250
+        px
+
+        !important
+        ;
+        height:
+
+        150
+        px
+
+        !important
+        ;
+        {
+        /
+        block
+        :
+        IndexPage
+        }
+        {
+            block: PermalinkPage
+        }
+        width:
+
+        500
+        px
+
+        !important
+        ;
+        height:
+
+        400
+        px
+
+        !important
+        ;
+        {
+        /
+        block
+        :
+        PermalinkPage
+        }
+        }
+
+        .question {
+            font-weight: normal;
+            margin-bottom: 5px;
+
+        {
+            block: IfCalibriFont
+        }
+        font-family:calibri, helvetica
+
+        ;
+        {
+        /
+        block
+        :
+        IfCalibriFont
+        }
+        font-size:
+
+        11
+        px
+
+        ;
+        line-height:
+
+        15
+        px
+
+        ;
+        display:block
+
+        ;
+        color: {
+            color: Text
+        }
+
+        ;
+        text-transform:none
+
+        ;
+        }
+
+        .caption {
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+        {
+            block: IfCalibriFont
+        }
+        font-family:calibri, helvetica
+
+        ;
+        {
+        /
+        block
+        :
+        IfCalibriFont
+        }
+        color: {
+            color: Text
+        }
+
+        ;
+        }
+        .bordaht {
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+
+        .h1 {
+            font-family: 'Clicker Script', cursive;
+        }
+
+        .purr {
+
+        font-family: {
+            font: Body
+        }
+
+        ;
+        text-align:center
+
+        ;
+        color: {
+            color: Sidebar Links
+        }
+
+        ;
+        display:block
+
+        ;
+        font-size:
+
+        9
+        px
+
+        ;
+        margin-top:
+
+        5
+        px
+
+        ;
+        letter-spacing:
+
+        1
+        px
+
+        ;
+        }
+
+        .purr a:hover {
+
+        color: {
+            color: sidebar links hover
+        }
+
+        ;
+        letter-spacing:
+
+        3
+        px
+
+        ;
+        }
+
+    </style>
+    <script type="text/javascript" src="http://samisite.com/extras/HTMLobj-1640/moveobj.js"></script>
+    <script type="text/javascript">
+
+        /***********************************************
+         * Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+         * Modified by Dynamic Drive for various improvements
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+         * Using CSB or Trellix:  use an INSERT HTML box to hold your script and put your js and images into web components (webgem in Trellix).  Then you MUST change each gEMDIR to GEMDIR before using code!
+         ***********************************************/
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+        var flyimage1, flyimage2, flyimage3, flyimage4
+
+        function pagestart() {
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (47=width, height=68 of image):
+            flyimage1 = new Chip("flyimage1", 40, 62);
+            flyimage2 = new Chip("flyimage2", 40, 62);
+            flyimage3 = new Chip("flyimage3", 40, 62);
+            flyimage4 = new Chip("flyimage4", 40, 62);
+            flyimage5 = new Chip("flyimage5", 40, 62);
+            flyimage6 = new Chip("flyimage6", 40, 62);
+
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+            movechip("flyimage1");
+            movechip("flyimage2");
+            movechip("flyimage3");
+            movechip("flyimage4");
+            movechip("flyimage5");
+            movechip("flyimage6");
+
+        }
+
+        if (window.addEventListener)
+            window.addEventListener("load", pagestart, false)
+        else if (window.attachEvent)
+            window.attachEvent("onload", pagestart)
+        else if (document.getElementById)
+            window.onload = pagestart
+
+    </script>
+
+    <!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
+
+
+    <div id="flyimage1" style="position:absolute; left: -500px; width:40; height:62; font-size:10px;">
+        <img src="{image:floaties1}">
+    </div>
+
+    <div id="flyimage2" style="position:absolute; left: -500px; width:40; height:62; font-size:10px;">
+        <img src="{image:floaties2}">
+    </div>
+
+    <div id="flyimage3" style="position:absolute; left: -500px; width:40; height:62; font-size:10px;">
+        <img src="{image:floaties3}">
+    </div>
+
+    <div id="flyimage4" style="position:absolute; left: -500px; width:40; height:62; font-size:10px;">
+        <img src="{image:floaties4}">
+    </div>
+
+    <div id="flyimage5" style="position:absolute; left: -500px; width:40; height:62; font-size:10px;">
+        <img src="{image:floaties5}">
+    </div>
+    <script type="text/javascript" src="http://static.tumblr.com/imovwvl/dJWl20ley/jqueryformasonry.js"></script>
+    <script type="text/javascript" src="http://static.tumblr.com/imovwvl/rSGl20lfv/masonry.js">
+    </script>
+    <script src="http://static.tumblr.com/df28qmy/SHUlh3i7s/jquery.infinitescroll.js"></script>
+    <script src="http://static.tumblr.com/thpaaos/lLwkowcqm/jquery.masonry.js"></script>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('.posts').masonry(),
+                $('.masonryWrap').infinitescroll({
+                        navSelector: "div#navigation",
+// selector for the paged navigation (it will be hidden)
+                        nextSelector: "div#navigation a#nextPage",
+// selector for the NEXT link (to page 2)
+                        itemSelector: ".entry",
+// selector for all items you'll retrieve
+                        bufferPx: 10000,
+                        extraScrollPx: 11000,
+                        loadingImg: "",
+                        loadingText: "<em></em>",
+                    },
+// call masonry as a callback.
+                    function () {
+                        $('.posts').masonry({appendedContent: $(this)});
+                    }
+                );
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="nav">
+        <div class="title">{block:ifshowblogtitle}{Title}{/block:ifshowblogtitle}</a></div>
+        {block:ifshownavbuttons}
+        <center><a title="home" href="/"><img
+                src="http://media.tumblr.com/6aca0d764fe5e18e1167e8c6d2ebb7df/tumblr_inline_mn2m1bdRic1qz4rgp.png"></a>
+            <a title="ask" href="/ask"><img
+                    src="http://media.tumblr.com/649f94f2f210bc510d0b67756f861eb9/tumblr_inline_mn2m2bLZts1qz4rgp.png"></a>
+            <a title="submit" href="/submit"><img
+                    src="http://media.tumblr.com/1993d10d01265cc0890de956820e8515/tumblr_inline_mn2m5djCbQ1qz4rgp.png"></a>
+            <a title="theme" href="http://jubileethemes.tumblr.com"><img
+                    src="http://media.tumblr.com/1e21b4526d9646dc496210d1199117b9/tumblr_inline_mn2m46JRuI1qz4rgp.png"></a>
+        </center>
+        {/block:ifshownavbuttons}
+        {block:ifShowSidebarImage}
+        <center><img src="{image:sidebar}" width="100px"></a></center>
+        {/block:ifShowSidebarImage}
+
+        <div id="info">{Description}
+        </div>
+        <div style="padding: 1px; margin-bottom:5px;">
+            <div style="">
+                <button type="button" class="button"
+                        onmouseover="this.sv=this.style.backgroundColor; this.style.backgroundColor='#f4f4f4';"
+                        onmouseout="if(this.sv)this.style.backgroundColor=this.sv; else this.style.backgroundColor='';"
+                        onclick="this.parentNode.parentNode.childNodes[1].style.display = ''; this.parentNode.style.display = 'none'; return false;"
+                        style="">links
+                </button>
+            </div>
+            <div class="spoiler" style="display: none;">
+                <div>
+                    <button type="button" class="button"
+                            onclick="this.parentNode.parentNode.parentNode.childNodes[0].style.display = ''; this.parentNode.parentNode.style.display = 'none'; return false;">
+                        close
+                    </button>
+                </div>
+
+                <div class="purr">
+
+                    <a href="{text:link 1 url}">{text:link 1 title}</a><br>
+                    <a href="{text:link 2 url}">{text:link 2 title}</a><br>
+                    <a href="{text:link 3 url}">{text:link 3 title}</a><br>
+                    <a href="{text:link 4 url}">{text:link 4 title}</a><br>
+                    <a href="{text:link 5 url}">{text:link 5 title}</a><br>
+                    <a href="{text:link 6 url}">{text:link 6 title}</a><br>
+
+
+                    </td>
+                    </tr>
+                </div>
+            </div>
+            </center><br><br>
+        </div>
+    </div>
+
+    <div class="left">
+
+        <div id="posts">
+
+            <div class="posts">
+
+                {block:Posts}
+
+                <div class="entry">
+
+                    {block:Text}
+                    <div id="entry">
+                        <div style="padding-top:15px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
+                            {block:Title}<span class="post_title">{Title}</span>{/block:Title}
+                            {Body}
+                            {block:IndexPage}
+                            <div class="permalink"><a href="{Permalink}">{NoteCountWithLabel} &nbsp; <a
+                                    href="{ReblogURL}" target="_blank">reblog</a></a></div>
+                            {/block:IndexPage}
+                        </div>
+                    </div>
+                    {/block:Text}
+
+                    {block:Photo}
+                    <div id="entry">
+                        {block:IndexPage}
+                        <div class="photopermaholder">
+                            <div class="photoperma"><a href="{ReblogURL}" target="_blank"><img
+                                    src="http://static.tumblr.com/i8axhtw/zGombktxi/rebloggg.png" title="reblog"
+                                    class="bordaht"></a> <img height="20" style="height:20px;cursor:pointer;"
+                                                              src="http://static.tumblr.com/i8axhtw/50mmbktzc/likeee.png"
+                                                              id="like_image_{PostID}"
+                                                              onclick="LikePost('{PostID}','{ReblogURL}',this)"
+                                                              border="0" alt="like" title="like" class="bordaht"/></div>
+                        </div>
+                        {/block:IndexPage}
+                        {/block:ifReblogLinkOnHover}
+                        {block:IndexPage}{LinkOpenTag}<a href="{Permalink}">{block:If400px}<img src="{PhotoURL-400}"
+                                                                                                alt="{PhotoAlt}"/>{/block:If400px}
+                        {block:If250px}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="100%"/>{/block:If250px}
+                        {block:if200px}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="100%"/>{/block:if200px}{LinkCloseTag}{/block:IndexPage}
+                    </div>
+                    {block:PermalinkPage}
+                    <img src="{PhotoUrl-500}">
+                    {block:Caption}{Caption}{/block:Caption}
+                    {/block:PermalinkPage}
+                    {/block:Photo}
+
+                    {block:Photoset}
+                    <div id="entry">
+                        {block:IndexPage}
+                        <div class="photopermaholder">
+                            <div class="photoperma"><a href="{ReblogURL}" target="_blank"><img
+                                    src="http://static.tumblr.com/i8axhtw/zGombktxi/rebloggg.png" title="reblog"
+                                    class="bordaht"></a> <img height="20" style="height:20px;cursor:pointer;"
+                                                              src="http://static.tumblr.com/i8axhtw/50mmbktzc/likeee.png"
+                                                              id="like_image_{PostID}"
+                                                              onclick="LikePost('{PostID}','{ReblogURL}',this)"
+                                                              border="0" alt="like" title="like" class="bordaht"/></div>
+                        </div>
+                        {/block:IndexPage}
+                        {/block:ifReblogLinkOnHover}
+                        {block:If400px}{Photoset-400}{/block:If400px}
+                        {block:If250px}{Photoset-250}{/block:If250px}
+                        {block:if200px}<img src="{Photoset-250}" width="200px" style="overflow:hidden;"/>{/block:if200px}
+                    </div>
+                    {/block:Photoset}
+
+                    {block:Quote}
+                    <div id="entry">
+                        <div style="padding-top:15px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
+                            <div class="quote">" {Quote} "</div>
+                            {block:IndexPage}
+                            <div class="permalink"><a href="{Permalink}">{NoteCountWithLabel} &nbsp; <a
+                                    href="{ReblogURL}" target="_blank">reblog</a></a></div>
+                            {/block:IndexPage}
+                        </div>
+                    </div>
+                    {/block:Quote}
+
+                    {block:Link}
+                    <div id="entry">
+                        <div style="padding-top:15px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
+                            <a href="{URL}" {Target}><span class="link_title"> {Name}</span></a>
+                            {block:Description}<small>{Description}</small>{/block:Description}
+                            {block:IndexPage}
+                            <div class="permalink"><a href="{Permalink}">{NoteCountWithLabel} &nbsp; <a
+                                    href="{ReblogURL}" target="_blank">reblog</a></a></div>
+                            {/block:IndexPage}
+                        </div>
+                    </div>
+                    {/block:Link}
+
+                    {block:Video}
+                    <div class="video">
+                        <div id="entry">
+                            {block:IndexPage}
+                            <div class="photopermaholder">
+                                <div class="photoperma"><a href="{ReblogURL}" target="_blank"><img
+                                        src="http://static.tumblr.com/i8axhtw/zGombktxi/rebloggg.png" title="reblog"
+                                        class="bordaht"></a> <img height="20" style="height:20px;cursor:pointer;"
+                                                                  src="http://static.tumblr.com/i8axhtw/50mmbktzc/likeee.png"
+                                                                  id="like_image_{PostID}"
+                                                                  onclick="LikePost('{PostID}','{ReblogURL}',this)"
+                                                                  border="0" alt="like" title="like" class="bordaht"/>
+                                </div>
+                            </div>
+                            {/block:IndexPage}
+                            {/block:ifReblogLinkOnHover}
+                            {block:IndexPage}{block:If400px}{Video-400}{/block:If400px}
+                            {block:If250px}{Video-250}{/block:If250px}
+                            {block:if200px}
+                            <div style="width:200px; overflow-y:hidden; overflow-x:hidden;">{Video-250}</div>
+                            {/block:if200px}{/block:IndexPage}
+                            {block:PermalinkPage}{Video-500}{/block:PermalinkPage}
+                        </div>
+                        {block:IndexPage}{block:Caption}
+                        <div class="videocap"><a href="{Permalink}">{Caption}</a></div>
+                        {/block:Caption}{/block:IndexPage}
+                        {block:PermalinkPage}{block:Caption}
+                        <div class="videocap">{Caption}</div>
+                        {/block:Caption}{/block:PermalinkPage}
+                    </div>
+                    {/block:Video}
+
+                    {block:Chat}
+                    <div id="entry">
+                        <div style="padding-top:15px; padding-bottom:10px; padding-left:10px; padding-right:10px;">
+                            {block:Title}
+                            <div class="ptitle">{Title}</div>
+                            {/block:Title}{block:Lines}{block:Label}<b>{Label}</b> {/block:Label}{Line}<br>{/block:Lines}
+                            {block:IndexPage}
+                            <div class="permalink"><a href="{Permalink}">{NoteCountWithLabel} &nbsp; <a
+                                    href="{ReblogURL}" target="_blank">reblog</a></a></div>
+                            {/block:IndexPage}
+                        </div>
+                    </div>
+                    {/block:Chat}
+
+                    {block:Audio}
+                    {block:AlbumArt}
+                    <div id="entry">
+                        {block:IndexPage}
+                        <div class="photopermaholder">
+                            <div class="photoperma"><a href="{ReblogURL}" target="_blank"><img
+                                    src="http://static.tumblr.com/i8axhtw/zGombktxi/rebloggg.png" title="reblog"
+                                    class="bordaht"></a> <img height="20" style="height:20px;cursor:pointer;"
+                                                              src="http://static.tumblr.com/i8axhtw/50mmbktzc/likeee.png"
+                                                              id="like_image_{PostID}"
+                                                              onclick="LikePost('{PostID}','{ReblogURL}',this)"
+                                                              border="0" alt="like" title="like" class="bordaht"/></div>
+                        </div>
+                        {/block:IndexPage}
+                        <div class="albumart"><img src="{AlbumArtURL}" width="100"></a></div>
+                    </div>
+                    {/block:AlbumArt}
+                    <div class="audio">{AudioPlayerWhite}</div>
+                    {block:PermalinkPage}{block:Caption}
+                    <div class="audiocap">{Caption}</div>
+                    {/block:Caption}{/block:PermalinkPage}
+                    {/block:Audio}
+
+                    {block:Answer}
+                    <div id="entry">
+                        <div style="padding-top:15px; padding-bottom:9px; padding-left:10px; padding-right:10px;">
+                            <div class="question"><u>{Asker}</u>: &nbsp;{Question}</div>
+                            {Answer}
+                            {block:IndexPage}
+                            <div class="permalink">{NoteCountWithLabel} &nbsp;</div>
+                            {/block:IndexPage}
+                        </div>
+                    </div>
+                    {/block:Answer}
+
+                    {block:PermalinkPage}
+
+                    <div style="padding-top:15px; padding-bottom:9px; padding-left:10px; padding-right:10px;">
+                        {block:Date}Posted {TimeAgo} with {NoteCountWithLabel}{/block:Date}
+                    </div>
+                    {/block:PermalinkPage}
+                    {block:PostNotes}{PostNotes}{/block:PostNotes}
+
+                </div>
+
+                {/block:Posts}
+            </div>
+        </div>
+
+        {block:IndexPage}
+        <div class="column navigation" id="navigation">
+            {block:Pagination}
+            {block:PreviousPage}<a href="{PreviousPage}" class="navigate">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+            {block:NextPage}<a href="{NextPage}" class="navigate" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}{/block:Pagination}
+        </div>
+        {/block:IndexPage}
+        <iframe id="likes_frame" style="height:1px;width:1px;position:absolute;left:-500px;"></iframe>
+
+</body>
+<div style="position:fixed; bottom: 0px; right: 0px"><a href="http://jubileethemes.tumblr.com"
+                                                        title="a jubilee theme"><big><big><big><big>☁</big></big></big></big></a>
+    <div style="position:fixed; top:{text:misc image vertical}px; left:{text:misc image horizontal}px; z-index:-1;"><img
+            src="{image:Misc Image}"></div>

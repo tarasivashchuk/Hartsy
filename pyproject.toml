@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "hartsy"
+version = "0.1.0"
+description = "Hannah's personal website where she can express and share her creativity with the world."
+authors = ["Taras Ivashchuk <taras@tarasivashchuk.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+logzero = "*"
+sqlalchemy = "*"
+flask = "*"
+flask-bootstrap = "*"
+flask-sqlalchemy = "*"
+flask-wtf = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+black = { version="*", allow-prereleases=true }
+isort = "*"
+flake8 = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
